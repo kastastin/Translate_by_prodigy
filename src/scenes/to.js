@@ -9,6 +9,7 @@ to.on('text', ctx => {
     if(ctx.message.text.length != 2) {
         return ctx.reply('Language must be a 2 chars');
     }
+    ctx.session.to = ctx.message.text.toLowerCase();
     return ctx.scene.leave();
 });
 
