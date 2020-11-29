@@ -1,0 +1,27 @@
+{
+  "name": "translate_by_prodigy",
+  "version": "1.0.0",
+  "description": "Telegram translate bot with Yandex API, Scenes, Sessions ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "start-dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "nodejs",
+    "npm",
+    "telegraf",
+    "translate",
+    "api",
+    "YandexAPI"
+  ],
+  "author": "kastastin",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "telegraf": "^3.38.0"
+  }
+}
