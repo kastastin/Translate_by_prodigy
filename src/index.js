@@ -1,11 +1,16 @@
 require('dotenv').config();
 
 const { BOT_TOKEN } = process.env;
+const { Telegraf, Markup } = require('telegraf');
 
-const Telegraf = require('telegraf');
+//<-----Commands----->
+const startCommand = require('./commands/start');
+const helpCommand = require('./commands/help');
 
 const init = async(bot, config) => {
-    bot.start(ctx => ctx.reply('Hi'));
+    //<-----Commands----->
+    bot.start(startCommand());
+    bot.help(helpCommand());
     return bot;
 };
 
